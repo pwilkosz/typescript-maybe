@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "outDir": "./dist/",
+    "rootDir": "./"
+  },
+  "exclude": [
+    "build",
+    "node_modules",
+    "test"
+  ],
+  "compileOnSave": true
+}
