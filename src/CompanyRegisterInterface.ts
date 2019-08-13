@@ -1,6 +1,6 @@
 export interface CompanyRegisterInterface {
     legal_name: string;
-    coordinates: {
+    coordinates?: {
         lat: number;
         lon: number;
     }
