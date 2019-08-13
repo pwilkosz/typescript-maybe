@@ -4,12 +4,8 @@ import { Company } from "./Company";
 
 const repository = new CompanyRepository();
 
-const payload: CompanyRegisterInterface = {
+const payload = <CompanyRegisterInterface>{
     legal_name: "PIOTROSZ dystrybucja niszczarek",
-    coordinates: {
-        lat: 1,
-        lon: 2
-    }
 };
 
 const company = new Company(

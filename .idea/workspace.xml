@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ec970a4-102d-4df4-8cdd-fac1e0af7964" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Company.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CompanyRegisterInterface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CompanyRepository.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,11 +22,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="112">
+              <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
               <folding>
                 <element signature="e#0#70#0" expanded="true" />
               </folding>
@@ -39,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="484">
@@ -104,8 +99,8 @@
         <option value="$PROJECT_DIR$/src/CompanyRegisterInterface.ts" />
         <option value="$PROJECT_DIR$/src/Company.ts" />
         <option value="$PROJECT_DIR$/src/CompanyRepository.ts" />
-        <option value="$PROJECT_DIR$/src/index.ts" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/index.ts" />
       </list>
     </option>
   </component>
@@ -184,12 +179,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565699461034</updated>
-      <workItem from="1565699462542" duration="1127000" />
+      <workItem from="1565699462542" duration="1859000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1127000" />
+    <option name="totallyTimeSpent" value="1859000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="25" width="1865" height="1055" extended-state="6" />
@@ -197,13 +192,13 @@
     <layout>
       <window_info id="npm" side_tool="true" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24958768" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24958768" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Docker" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32937366" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32937366" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -258,20 +253,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
