@@ -12,10 +12,6 @@
     "outDir": "./dist/",
     "rootDir": "./"
   },
-  "exclude": [
-    "build",
-    "node_modules",
-    "test"
-  ],
+
   "compileOnSave": true
 }
