@@ -2,6 +2,7 @@ import { CompanyRegisterInterface } from "./CompanyRegisterInterface";
 import { CompanyRepository } from "./CompanyRepository";
 import { Company } from "./Company";
 import { GeoLocationService } from "./GeoLocationService";
+import { Maybe } from "./Maybe";
 
 const repository = new CompanyRepository();
 const geoLocationService = new GeoLocationService();
@@ -11,11 +12,16 @@ const payload = <CompanyRegisterInterface>{
 };
 
 (async () => {
-    const geolocationData = await geoLocationService.getGeolocation(payload.locality);
+
+    const geolocationData = Maybe.from(payload)
+        .map(payload => payload.locality)
+        .map(async (locality) => await geoLocationService.getGeolocation(locality))
+        .getValueOr({lat: null, lon: null});
+
 
     return repository.addCompany(new Company(
         payload.legal_name,
-        payload.locality,
+        Maybe.from(payload.locality),
         geolocationData.lat,
         geolocationData.lon
     ))

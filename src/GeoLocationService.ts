@@ -3,14 +3,7 @@ export class GeoLocationService {
     }
 
     public getGeolocation(locality?: string): Promise<{lat: number, lon:number} | undefined> {
-        if (locality) {
-            return Promise.resolve({
-                lat: 1,
-                lon: 2
-            });
-        } else {
-            return Promise.resolve(undefined);
-        }
+        return Promise.resolve(undefined);
 
     }
 
