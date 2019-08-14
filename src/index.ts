@@ -13,12 +13,12 @@ const payload = <CompanyRegisterInterface>{
 (async () => {
     const geolocationData = await geoLocationService.getGeolocation(payload.locality);
 
-    return repository.addCompany(<Company>{
-        legalName: payload.legal_name,
-        locality: payload.locality,
-        lat: geolocationData.lat,
-        lon: geolocationData.lon
-    })
+    return repository.addCompany(new Company(
+        payload.legal_name,
+        payload.locality,
+        geolocationData.lat,
+        geolocationData.lon
+    ))
         .then((result: boolean) => {
             console.log("Successfully saved a company");
 
