@@ -1,21 +1,24 @@
 import { CompanyRegisterInterface } from "./CompanyRegisterInterface";
 import { CompanyRepository } from "./CompanyRepository";
 import { Company } from "./Company";
+import { GeoLocationService } from "./GeoLocationService";
 
 const repository = new CompanyRepository();
+const geoLocationService = new GeoLocationService();
 
 const payload = <CompanyRegisterInterface>{
     legal_name: "PIOTROSZ dystrybucja niszczarek",
 };
 
-const company = new Company(
-    payload.legal_name,
-    payload.coordinates.lat,
-    payload.coordinates.lon
-);
+(async () => {
+    const geolocationData = await geoLocationService.getGeolocation(payload.locality);
 
-(() => {
-    return repository.addCompany(company)
+    return repository.addCompany(<Company>{
+        legalName: payload.legal_name,
+        locality: payload.locality,
+        lat: geolocationData.lat,
+        lon: geolocationData.lon
+    })
         .then((result: boolean) => {
             console.log("Successfully saved a company");
 
